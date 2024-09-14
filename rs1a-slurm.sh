@@ -24,3 +24,10 @@ print(time.localtime()); \
 print(time.time()-t0);"
 
 aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:225989329650:awsnotify --message "RPLS1aJobDone"
+
+DPT.objects.processDirs(dirs=None, objtype=pyh.RPLSplit, channel=[*range(1,33)], SkipHPC=False, HPCScriptsDir='/data/src/PyHipp/', SkipLFP=False, SkipHighPass=False, SkipSort=False); \
+print(time.localtime()); \
+print(time.time()-t0);"
+
+aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:018084650241:awsnotify --message "RPLS1JobDone"
+
